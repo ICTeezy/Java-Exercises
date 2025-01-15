@@ -1,7 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Main {
+public class Exercise6_31 {
 
     public static void main(String[] args) {
 
