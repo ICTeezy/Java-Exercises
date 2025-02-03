@@ -1,16 +1,26 @@
+import java.util.Date;
+
 // GeometricObject.java: The abstract GeometricObject class
-public abstract class GeometricObject {
+public abstract class GeometricObject
+{
   private String color = "white";
   private boolean filled;
+  private Date dateCreated;
 
   /**Default construct*/
   protected GeometricObject() {
+      dateCreated = new Date();
   }
 
   /**Construct a geometric object*/
-  protected GeometricObject(String color, boolean filled) {
+  protected GeometricObject( String color, boolean filled) {
+    dateCreated = new Date();
     this.color = color;
     this.filled = filled;
+  }
+
+  public Date getDateCreated() {
+    return dateCreated;
   }
 
   /**Getter method for color*/
@@ -39,4 +49,9 @@ public abstract class GeometricObject {
 
   /**Abstract method getPerimeter*/
   public abstract double getPerimeter();
+
+  @Override
+  public String toString() {
+    return "Created on " + dateCreated + " \ncolor: " + color + " and filled: " + filled;
+  }
 }
