@@ -1,3 +1,5 @@
+import java.math.BigInteger;
+
 public class Exercise_12_9 {
 
     public static int binaryToDecimal(String binaryString) throws BinaryFormatException {

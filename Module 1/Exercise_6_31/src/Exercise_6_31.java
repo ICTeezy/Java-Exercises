@@ -1,7 +1,8 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Exercise6_31 {
+public class Exercise_6_31
+{
 
     public static void main(String[] args) {
 
